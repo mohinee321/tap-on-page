@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cute Surprise 💌</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Start screen -->
+  <div id="startScreen" class="center-screen">
+    <h1 class="main-title">Hey — I made something cute for you 🥺💌</h1>
+    <button id="tapBtn" class="btn primary">Tap on me 💖</button>
+  </div>
+
+  <!-- floating hearts container (background decoration) -->
+  <div id="hearts" aria-hidden="true"></div>
+
+  <!-- Modal 1: "I Miss You" -->
+  <div id="modal1" class="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <h2 class="modal-title">I Miss You 😭💜</h2>
+      <p class="modal-sub">A little surprise for you ✨</p>
+      <div class="modal-actions">
+        <button id="modal1Next" class="btn secondary">Next 👉</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: final message -->
+  <div id="modal2" class="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <h2 class="modal-title">Chal abh soja 😂❤️</h2>
+      <p class="modal-sub">Love You 💕</p>
+      <div class="modal-actions">
+        <button id="closeBtn" class="btn primary">Close ✨</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
